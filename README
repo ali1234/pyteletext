@@ -20,6 +20,10 @@ transmit. The data must be split into directories:
 
 See examples folder.
 
+The data directory is monitored constantly for changes so
+you can generate or edit pages in any external program. As
+soon as they are saved they will be added to the rotation.
+
 TODO
 ----
 
