@@ -1,0 +1,27 @@
+Python Teletext Service
+-----------------------
+
+This software generates the packet stream for a full teletext
+service with up to 8 magazines, 0xff pages per magazine, and
+3f7f subpages per page.
+
+Usage
+-----
+
+The packets will be written to stdout, so you must pipe it
+in to some teletext handling software such as raspi-teletext:
+
+./main.py <data> | ../raspi-teletext/teletext
+
+The data directory holds all pages and subpages you want to
+transmit. The data must be split into directories:
+
+./<page>/<subpage>.tt
+
+See examples folder.
+
+TODO
+----
+
+Use python generators instead of loops.
+
